@@ -1,0 +1,10 @@
+mysql:
+  host: 127.0.0.1
+  username: root
+  password: "**"
+  database: beauty_address
+  maxIdleConns: 10
+
+js-file: ./test/rule.js
+pass: "**"
+thread: 2

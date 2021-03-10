@@ -1,32 +1,32 @@
-# XXX
+# gene-beauty-ether-addr
 
-[![view examples](https://img.shields.io/badge/learn%20by-examples-0C8EC5.svg?style=for-the-badge&logo=go)](https://github.com/pefish/XXX)
+[![view examples](https://img.shields.io/badge/learn%20by-examples-0C8EC5.svg?style=for-the-badge&logo=go)](https://github.com/pefish/gene-beauty-ether-addr)
 
 Read this in other languages: [English](README.md), [简体中文](README_zh-cn.md)
 
-XXX
+gene-beauty-ether-addr
 
 ## 安装
 
 ```
-go get github.com/pefish/XXX/cmd/XXX
+go get github.com/pefish/gene-beauty-ether-addr/cmd/...
 ```
 
 ## 快速开始
 
 ```shell script
-go run ./cmd/XXX --config=/path/to/config
+go run ./cmd/gene-beauty-ether-addr --config=/path/to/config
 ```
 
 或者
 
 ```shell script
-GO_CONFIG=/path/to/config go run ./cmd/XXX
+GO_CONFIG=/path/to/config go run ./cmd/gene-beauty-ether-addr
 ```
 
 ## 文档
 
-[doc](https://godoc.org/github.com/pefish/XXX)
+[doc](https://godoc.org/github.com/pefish/gene-beauty-ether-addr)
 
 ## 贡献代码（非常欢迎）
 
