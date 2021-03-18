@@ -9,8 +9,8 @@ import (
 
 func main() {
 	commanderInstance := commander.NewCommander(version.AppName, version.Version, version.AppName + " 是一个生成漂亮的以太坊地址的工具，祝你玩得开心。作者：pefish")
-	commanderInstance.RegisterSubcommand("inspect", command.NewInspectCommand())
-	commanderInstance.RegisterDefaultSubcommand(command.NewDefaultCommand())
+	commanderInstance.RegisterSubcommand("inspect", "查看地址信息",command.NewInspectCommand())
+	commanderInstance.RegisterDefaultSubcommand("生成地址", command.NewDefaultCommand())
 	err := commanderInstance.Run()
 	if err != nil {
 		go_logger.Logger.Error(err)

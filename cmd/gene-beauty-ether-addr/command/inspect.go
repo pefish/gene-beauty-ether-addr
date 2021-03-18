@@ -31,9 +31,9 @@ func (dc *InspectCommand) OnExited(data *commander.StartData) error {
 }
 
 func (dc *InspectCommand) Start(data *commander.StartData) error {
-	path := go_config.Config.MustGetString("path")
-	mnemonic := go_config.Config.MustGetString("mnemonic")
-	pass := go_config.Config.MustGetString("pass")
+	path := go_config.ConfigManagerInstance.MustGetString("path")
+	mnemonic := go_config.ConfigManagerInstance.MustGetString("mnemonic")
+	pass := go_config.ConfigManagerInstance.MustGetString("pass")
 
 	wallet := go_coin_eth.NewWallet()
 	seed := wallet.SeedHexByMnemonic(mnemonic, pass)

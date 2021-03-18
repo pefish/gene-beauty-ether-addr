@@ -47,10 +47,10 @@ func (dc *DefaultCommand) OnExited(data *commander.StartData) error {
 }
 
 func (dc *DefaultCommand) Start(data *commander.StartData) error {
-	jsFileName := go_config.Config.MustGetString("js-file")
-	pass := go_config.Config.MustGetString("pass")
-	mysqlConfig := go_config.Config.MustGetMap("mysql")
-	threadCount := go_config.Config.MustGetInt("thread")
+	jsFileName := go_config.ConfigManagerInstance.MustGetString("js-file")
+	pass := go_config.ConfigManagerInstance.MustGetString("pass")
+	mysqlConfig := go_config.ConfigManagerInstance.MustGetMap("mysql")
+	threadCount := go_config.ConfigManagerInstance.MustGetInt("thread")
 
 	go_mysql.MysqlInstance.SetLogger(go_logger.Logger)
 	err := go_mysql.MysqlInstance.ConnectWithMap(mysqlConfig)
