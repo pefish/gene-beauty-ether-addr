@@ -21,7 +21,7 @@ func NewInspectCommand() *InspectCommand {
 func (dc *InspectCommand) DecorateFlagSet(flagSet *flag.FlagSet) error {
 	flagSet.String("path", "m/0/0", "path")
 	flagSet.String("mnemonic", "mnemonic", "mnemonic")
-	flagSet.String("pass", "pefish", "password")
+	flagSet.String("pass", "pass", "password")
 	return nil
 }
 
